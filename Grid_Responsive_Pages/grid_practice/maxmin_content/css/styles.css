@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Helvetica Neue";
+}
+
+.grid{
+
+    /* max-content se define por el espacio maximo 
+    que ocupa un contenido en una area ej: h2.hola>"Hola como estas?"</h2
+    por el contrario min content, se define por el espacio maximo que unos 
+    de los contenidos ocupa en un espacio delimitado ej: div.hola>Hola 
+    "Brownie" como estas?, siendo brownie la palabra que tiene mas caracteres 
+    en la sintaxis*/
+
+    /* min-content si se declara en fila, es el alto, si es en columna es el ancho minimo
+    se puede definir en auto columns, rows, template columns, y template rows
+    */
+
+    /* fit-content es una funcion para definir el maximo contenimo, y minimo: 
+    
+    grid-templates-columns: fit-content(300px)
+    
+    minmax :
+
+    grid-templates-columns: minmax(200px, 300px);
+    grid-templates-columns: minmax(50%, max-content);
+    grid-templates-columns: minmax(50%, min-content);
+
+    medira un minimo de 200px, no no sobrepasara 
+    su max, min content, o los 300px
+    
+    grid-template-columns: max-content min-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr); */
+
+    /* auto-fill
+
+esto me permite crear columnas o filas, segun 
+el espacio que tenga disponible
+
+grid-templates-columns: repeat(auto-fill, 150px);
+
+tambien crearan 10 columnas en este caso, aun teniendo 
+solo 4 grid items, se gerera de manera automatica.. 
+
+10% en 100% 
+
+grid-templates-columns: repeat(auto-fill, 10%);
+
+auto-fit 
+
+es similar a auto-fill, la diferencia es
+que uno crea tantos espacios en que le es posible, 
+y el otro solo crea el espacio que vayamos a 
+necesitar
+
+grid-templates-columns: repeat(auto-fit, 15%);
+
+grid-templates-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+lo que seria el equivalente a un espacio de 700px, 
+un total de 4 columnas, con un sobrante de 100px..
+
+align-items: start; su valor por defecto es strech
+place-items: start center;
+
+*/
+
+
+    display: grid;    
+    /* grid-template-columns: repeat(2,fr); */
+    /* grid-template-rows: repeat(2,fr); */
+
+    /* place-items: start center; */
+
+    gap: 1em;
+    width: 90%;
+    height: 600px;
+    outline: 3px solid;
+    margin: 20px auto;
+}
+
+.item{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.header{
+    /* alinea un solo elemento en base celda verticalmente, align-self */
+    /* justify-self: auto; */
+    /* align-self: stretch;  */
+    /* place-self: align-self + justify-self; */
+
+    /* align-self: alinea vertical o en columnas, justify-self 
+    alinea en filas de manera horizontal*/
+
+    /* grid: es lo mismo que grid-template */
+
+    /* grid-template: grid-template-rows / grid-template-columns; */
+    grid-template: 1fr, 1fr, 80px / 100px, 30%, 1fr, 1fr;
+
+    /* place-self: start center; */
+    background-color: hsl(257, 40%, 49%);
+}
+
+.footer{
+    /* place-self: end center; */
+    background-color: hsl(242, 69%, 71%);
+}
+
+.main{
+    /* place-self: center center; */
+    background-color: hsl(141, 40%, 49%);
+}
+
+.aside{
+    /* place-self: start center; */
+    background-color: hsl(34, 69%, 71%);
+}
+

@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Helvetica Neue";
+}
+
+.grid{
+    display: grid;
+
+    /* grid templates 
+    crea referencias directas para los elementos 
+    del html, es prederminado en formato de filas, 
+    por cada elemento que se referencia es una 
+    fila nueva  ej: 3 filas */
+    
+    /* siempre deben de tener las mismas cantidad 
+    de elementos todas las filas o se rompen */
+
+    grid-template-areas: 
+    "1 2 3 4" 
+    "5 6 7 8" 
+    "9 10 11 12";
+
+    /* grid-auto-rows: 100px; */
+    /* asigna el tamaño 
+    a cada celda de las filas, para 
+    columns es lo mismo */
+    
+    width: 90%;
+    max-width: 700px;
+    margin: 80px auto;
+    overflow: hidden;
+    outline: 3px solid;
+    height: 500px;
+}
+
+.item{
+    color: #fff;
+    font-size: 2.5rem;
+    height: auto;
+}
+
+.item-1{
+    background-color: hsl(257, 40%, 49%);
+}
+
+.item-2{
+    background-color: hsl(242, 69%, 71%);
+}
+
+.item-3{
+    background-color: hsl(141, 40%, 49%);
+}
+
+
+.item-4{
+    background-color: hsl(75, 40%, 49%);
+}
+
+.item-5{
+    background-color: hsl(34, 69%, 71%);
+}
+
+.item-6{
+    background-color: hsl(16, 40%, 49%);
+}
+
+.item-7{
+    background-color: hsl(10, 69%, 71%);
+}
+
+.item-8{
+    background-color: hsl(12, 4%, 48%);
+}
+
+.item-9{
+    background-color: hsl(7, 64%, 68%);
+}
+
+.item-10{
+    background-color: hsl(253, 54%, 47%);
+}
+
+.item-11{
+    background-color: hsl(273, 91%, 44%);
+}
+
+.item-12{
+    background-color: hsl(73, 82%, 46%);
+}
+
+
+

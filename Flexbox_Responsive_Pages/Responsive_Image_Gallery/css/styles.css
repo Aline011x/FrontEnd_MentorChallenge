@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cadetblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gallery{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.gallery_tittle{
+    font-size: 2rem;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.imgcontent{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.imagenes{
+flex: 300px;
+}
+
+.img_g{
+    width: 100%;
+    height: 100%
+}

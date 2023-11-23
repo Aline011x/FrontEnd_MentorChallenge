@@ -1,0 +1,65 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body{
+    font-family: "Helvetica Neue";
+    /* background-color: hsl(257, 40%, 49%); */
+}
+
+.grid{
+
+    display: grid;
+
+    width: 90%;
+    max-width: 600px;
+    margin: 80px auto;
+    overflow: hidden;
+    outline: 3px solid;
+    height: 500px;
+}
+
+.item{
+    color: #fff;
+    font-size: 2.5rem;
+    height: auto;
+}
+
+.item-1{
+    background-color: hsl(257, 40%, 49%);
+}
+
+.item-2{
+    background-color: hsl(242, 69%, 71%);
+}
+
+.item-3{
+    background-color: hsl(141, 40%, 49%);
+}
+
+
+.item-4{
+    background-color: hsl(75, 40%, 49%);
+}
+
+.item-5{
+    background-color: hsl(34, 69%, 71%);
+}
+
+.item-6{
+    background-color: hsl(16, 40%, 49%);
+}
+
+.item-7{
+    background-color: hsl(10, 69%, 71%);
+}
+
+.item-8{
+    background-color: hsl(12, 4%, 48%);
+}
+
+
+
